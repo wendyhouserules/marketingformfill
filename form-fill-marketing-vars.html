@@ -1,0 +1,25 @@
+<script>
+    (function () {
+    // Grab from GTM Vars
+      var msource = "{{MarketingSource}}";
+      var mmedium = "{{MarketingMedium}}";
+      var mreferrer = "{{MarketingReferrer}}";
+      var mcampaign = "{{MarketingCampaign}}";
+      
+    //fill with CSS Selector that identifies the form field
+      var msourceSelector = "#msource" ;
+      var mmediumSelector = "#mmedium" ;
+      var mreferrerSelector = "#mreferrer" ;
+      var mcampaignSelector = "#mcampaign" ;
+
+      var sourceField = document.querySelector(msourceSelector);
+      var mediumField = document.querySelector(mmediumSelector);
+      var referrerField = document.querySelector(mreferrerSelector);
+      var campaignField = document.querySelector(mcampaignSelector);
+
+      if(sourceField){ sourceField.value = msource||"(none)"; }
+      if(mediumField){ mediumField.value = mmedium||"(none)"; }
+      if(referrerField){ referrerField.value = mreferrer||"(none)"; }
+      if(campaignField){ campaignField.value = mcampaign||"(none)"; }
+    })();
+</script>
