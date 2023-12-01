@@ -1,4 +1,4 @@
-# marketingformfill
+# Marketing Attribution Form Fill
 Javascript snippets to fill hidden form fields with marketing attribution data GA Client ID, source and medium using referrer logic, campaign, and referrer using Google Tag Manager.
 
 Step by step guide:
